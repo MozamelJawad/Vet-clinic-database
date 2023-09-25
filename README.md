@@ -50,8 +50,8 @@ After you're finished please remove all the comments and instructions!
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
+  <!-- - [Usage](#usage) -->
+  <!-- - [Run tests](#run-tests) -->
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -129,7 +129,6 @@ In order to run this project you need the following tools:
 - Install Visual Studio
 - Install Node.js
 
-
 ### Setup
 Clone this repository to your desired folder by running the following commands in your terminal:
 
@@ -138,19 +137,17 @@ Clone this repository to your desired folder by running the following commands i
   
   git clone https://github.com/MozamelJawad/Vet-clinic-database.git
 ```
-
 ### Install
 
 Install this project with:
 
-
 ```sh
-  cd metrics-webapp
+  cd Vet-clinic-database
 ```
 
-### Usage
+<!-- ### Usage
 
-To run the project, execute the following command:
+To run the project, execute the following command: -->
 
 <!--
 Example command:
@@ -160,9 +157,9 @@ Example command:
 ```
 --->
 
-### Run tests
+<!-- ### Run tests
 
-To run tests, run the following command:
+To run tests, run the following command: -->
 
 <!--
 Example command:
@@ -176,21 +173,13 @@ Example command:
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
+- PostgreSQL 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Mozamel Jawad**
 
@@ -201,7 +190,6 @@ Example:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
-
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[I will add more tables]**
@@ -231,12 +219,6 @@ Give a ⭐️ if you like this project!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 > - Thanks to the Microverse team for the great curriculum and opportunity.
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
