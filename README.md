@@ -111,7 +111,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](<comming soon>)
+- [Live Demo Link- Comming Soon](<>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -173,7 +173,7 @@ Example command:
 
 You can deploy this project using:
 
-- PostgreSQL 
+- Install PostgreSQL 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
