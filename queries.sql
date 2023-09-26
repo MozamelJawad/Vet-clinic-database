@@ -18,3 +18,13 @@ UPDATE animals SET species = 'unspecified'; -- Update the species to unspecified
 SELECT * FROM animals; --verify the the chnages
 ROLLBACK;          --Rollback the transaction 
 SELECT * FROM animals; --Verify that the species columns went back to the state before the transaction.
+
+
+-- Inside a transaction: (2)
+BEGIN;  -- Begin transaction
+UPDATE animals SET species = 'digimon' WHERE name like '%mon'; -- Update the animals table by setting the species column to digimon for all animals that have a name ending in mon. 
+UPDATE animals SET species = 'pokemon' WHERE species IS NULL; --Update the animals table by setting the species column to pokemon for all animals that don't have species already set.
+SELECT  * FROM animals; --Verify that changes were made.
+COMMIT; -- Commit the transaction.
+SELECT  * FROM animals; --Verify that changes persist after commit.
+
