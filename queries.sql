@@ -36,3 +36,17 @@ SELECT  * FROM animals; --Verfiy that all rows are deleted
 ROLLBACK; -- roll back the transaction.
 SELECT  * FROM animals; --After the rollback verify if all records in the animals table still exists
 
+
+-- Inside a transaction: (4)
+
+ BEGIN;
+DELETE FROM animals WHERE date_of_birth > '2022-01-01';  -- Delete all animals born after Jan 1st, 2022.
+SELECT  * FROM animals;
+SAVEPOINT sp1;  -- Create a savepoint for the transaction.
+UPDATE animals SET weight_kg = weight_kg * -1; --Update all animals' weight to be their weight multiplied by -1.
+ROLLBACK TO sp1;  -- Rollback to the savepoint
+UPDATE animals SET weight_kg = weight_kg * -1 WHERE weight_kg < 0; -- Update all animals' weights that are negative to be their weight multiplied by -1.
+COMMIT;  -- Commit transaction
+
+
+ 
