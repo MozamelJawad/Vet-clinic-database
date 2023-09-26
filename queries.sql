@@ -28,3 +28,11 @@ SELECT  * FROM animals; --Verify that changes were made.
 COMMIT; -- Commit the transaction.
 SELECT  * FROM animals; --Verify that changes persist after commit.
 
+
+-- Inside a transaction (3)
+BEGIN; -- Start new transaction
+DELETE FROM animals; -- Delete all records
+SELECT  * FROM animals; --Verfiy that all rows are deleted
+ROLLBACK; -- roll back the transaction.
+SELECT  * FROM animals; --After the rollback verify if all records in the animals table still exists
+
