@@ -87,7 +87,7 @@ GROUP BY species.name;
 SELECT species.name AS species, full_name, animals.name AS animal_name FROM animals 
 JOIN species ON animals.id = species.id 
 JOIN owners ON animals.id = owners.id 
-where full_name = 'Jennifer Orwell';
+where full_name = 'Jennifer Orwell'  AND species.name = 'Digimon';
 
 SELECT animals.name, full_name, escape_attempts FROM animals 
 JOIN owners ON animals.owner_id = owners.id 
