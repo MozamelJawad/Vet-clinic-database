@@ -65,10 +65,6 @@
 - **Retview data from the table**
 - **The SQL code for all parts are available**
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
