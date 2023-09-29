@@ -33,3 +33,10 @@ id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
 name VARCHAR(100) NOT NULL,
 age INT NOT NULL,
 date_of_graduation DATE);
+
+CREATE TABLE specializations(
+vets_id INT NOT NULL,
+species_id INT NOT NULL,
+PRIMARY KEY(vets_id, species_id),
+CONSTRAINT fk_specializatino_vets FOREIGN KEY(vets_id) REFERENCES vets(id),
+CONSTRAINT fk_specialization_species FOREIGN KEY(species_id) REFERENCES species(id));
